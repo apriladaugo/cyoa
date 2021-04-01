@@ -1,5 +1,5 @@
 header.page-header {
-    background: no-repeat left/cover url(/images/banner.jpg);
+    background: no-repeat left/cover url(/cyoa/images/banner.jpg);
     display: flex;
     height: 120px;
     min-width: 120px;
