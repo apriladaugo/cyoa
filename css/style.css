@@ -1,0 +1,122 @@
+header.page-header {
+    background: no-repeat left/cover url(/images/hut2.jpg);
+    display: flex;
+    height: 480px;
+    min-width: 120px;
+    background-size: contain;
+    align-items: center;
+    color: #fff;
+    text-shadow: #000 0 0 .2em;
+}
+
+header.page-header>h1 {
+    font: bold calc(1em + 2 * (100vw - 120px) / 100) 'Papyrus';
+    margin: 2%;
+}
+
+main {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.playGame {
+    position: relative;
+    top: 2fr;
+    left: auto;
+    padding: 15px 15px 15px 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 200px;
+    align-items: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.responsiveImage {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+
+/* experiment */
+
+
+/* Section */
+
+.section {
+    clear: both;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Column */
+
+.col {
+    background: #eee;
+    display: block;
+    float: left;
+    margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child {
+    margin-left: 0 !important;
+}
+
+
+/* Row */
+
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+.row {
+    zoom: 1;
+    /* For IE 6/7 */
+}
+
+
+/* Grid */
+
+.grid_1_of_3 {
+    width: 32.267%
+}
+
+.grid_2_of_3 {
+    width: 66.133%
+}
+
+.grid_3_of_3 {
+    width: 100%
+}
+
+
+/* Full Width below 768 pixels */
+
+@media only screen and (max-width: 768px) {
+    .col {
+        margin: 1% 0 1% 0%;
+    }
+    [class*='grid_'] {
+        width: 100%;
+    }
+}
